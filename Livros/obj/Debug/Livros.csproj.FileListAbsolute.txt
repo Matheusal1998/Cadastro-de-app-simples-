@@ -1,2 +1,7 @@
 C:\Projetos\DigitalInnovation\Livros\Livros\obj\Debug\Livros.csprojAssemblyReference.cache
 C:\Projetos\DigitalInnovation\Livros\Livros\obj\Debug\Livros.csproj.CoreCompileInputs.cache
+C:\Projetos\DigitalInnovation\Livros\Livros\bin\Debug\Livros.exe.config
+C:\Projetos\DigitalInnovation\Livros\Livros\bin\Debug\Livros.exe
+C:\Projetos\DigitalInnovation\Livros\Livros\bin\Debug\Livros.pdb
+C:\Projetos\DigitalInnovation\Livros\Livros\obj\Debug\Livros.exe
+C:\Projetos\DigitalInnovation\Livros\Livros\obj\Debug\Livros.pdb

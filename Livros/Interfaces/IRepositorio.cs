@@ -9,10 +9,10 @@ namespace Livros.Interfaces
     public interface IRepositorio<T>
     {
         List<T> Lista();
-        T RetornaPorId();
+        T RetornaPorId(int id);
         void Insere(T entidade);
-        void Exclui(Guid id);
-        void Atualiza(Guid id, T entidade);
-        Guid ProximoId();
+        void Exclui(int id);
+        void Atualiza(int id, T entidade);
+        int ProximoId();
     }
 }

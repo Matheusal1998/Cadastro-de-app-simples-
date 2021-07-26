@@ -18,10 +18,11 @@ namespace Livros.Classes
         private string Descricao { get; set; }
         private string Autor { get; set; }
         private int AnoPublicacao { get; set; }
+        private bool Excluido { get; set; }
         #endregion
 
         #region Construtor
-        public Livro(Guid id, Genero genero, string titulo, string descricao, string autor, int anoPublicacao)
+        public Livro(int id, Genero genero, string titulo, string descricao, string autor, int anoPublicacao)
         {
             Id = id;
             Genero = genero;
@@ -29,6 +30,7 @@ namespace Livros.Classes
             Descricao = descricao;
             Autor = autor;
             AnoPublicacao = anoPublicacao;
+            Excluido = false;
         }
 
         #endregion
@@ -43,6 +45,7 @@ namespace Livros.Classes
             retorno += "Autor: " + this.Autor + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de publicação: " + this.AnoPublicacao + Environment.NewLine;
+            retorno += "Excluído: " + this.Excluido;
 
             return retorno;
         }
@@ -52,9 +55,18 @@ namespace Livros.Classes
             return this.Titulo;
         }
 
-        public Guid RetornaId()
+        public int RetornaId()
         {
             return this.Id;
+        }
+        public bool RetornaExcluido()
+        {
+            return this.Excluido;
+        }
+
+        public void Excluir()
+        {
+            this.Excluido = true;
         }
         #endregion
     }

@@ -8,6 +8,6 @@ namespace Livros.Classes
 {
     public abstract class EntidadeBase
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

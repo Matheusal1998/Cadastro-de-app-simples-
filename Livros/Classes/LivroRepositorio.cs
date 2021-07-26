@@ -9,37 +9,36 @@ namespace Livros.Classes
 {
     public class LivroRepositorio : IRepositorio<Livro>
     {
-
-        private List<Livro> listaLivro = new List<Livro>();
+        public List<Livro> ListaLivro { get; } = new List<Livro>();
 
         public List<Livro> Lista()
         {
-            throw new NotImplementedException();
+            return ListaLivro;
         }
 
-        public Livro RetornaPorId()
+        public Livro RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return ListaLivro[id];
         }
 
         public void Insere(Livro entidade)
         {
-            throw new NotImplementedException();
+            ListaLivro.Add(entidade);
         }
 
-        public void Exclui(Guid id)
+        public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            ListaLivro[id].Excluir();
         }
 
-        public void Atualiza(Guid id, Livro entidade)
+        public void Atualiza(int id, Livro entidade)
         {
-            throw new NotImplementedException();
+            ListaLivro[id] = entidade;
         }
 
-        public Guid ProximoId()
+        public int ProximoId()
         {
-            throw new NotImplementedException();
+            return ListaLivro.Count();
         }
     }
 }
