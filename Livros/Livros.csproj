@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Classes\EntidadeBase.cs" />
     <Compile Include="Classes\Livro.cs" />
+    <Compile Include="Classes\LivroRepositorio.cs" />
     <Compile Include="Enum\Genero.cs" />
+    <Compile Include="Interfaces\IRepositorio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
